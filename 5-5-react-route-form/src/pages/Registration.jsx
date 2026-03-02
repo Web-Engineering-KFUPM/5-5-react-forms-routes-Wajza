@@ -79,10 +79,10 @@ export default function Registration() {
           <input
               type="radio"
               name="gender"
-              value="other"
-              checked={gender === "other"}
+              value="female"
+              checked={gender === "female"}
               onChange={(e) => setGender(e.target.value)}
-            /> Other
+            /> Female
           </label>
           {errors.gender && (
             <p className="error">{errors.gender}</p>
